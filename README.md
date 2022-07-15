@@ -1,4 +1,5 @@
 # LAMP-Docker-Template
+DockerとDocker-Composeは予めインストールしてください。
 
 `docker-compose up -d`すると以下のコンテナが立ち上がります。
 - PHP8.1
