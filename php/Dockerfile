@@ -6,7 +6,7 @@ RUN apt-get update \
 && docker-php-ext-enable xdebug
 
 COPY --from=composer /usr/bin/composer /usr/bin/composer
-WORKDIR /usr/src/myapp
+WORKDIR /var/www/html
 
 RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf
 RUN a2enconf fqdn
